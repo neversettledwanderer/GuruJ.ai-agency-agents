@@ -1,0 +1,8 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(ls -la \"/d/Git Repos/GuruJ.ai-agency-agents/\" | grep -E \"\\\\.md$|package\\\\.json|requirements\\\\.txt|pyproject\\\\.toml|\\\\.cursor|CLAUDE\")",
+      "Bash(find \"/d/Git Repos/GuruJ.ai-agency-agents\" -path \"./.git\" -prune -o -name \"*.md\" -type f -print | xargs wc -l 2>/dev/null | tail -1)"
+    ]
+  }
+}
